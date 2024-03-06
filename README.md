@@ -1,18 +1,16 @@
-# apptive-20th-homepage
-동아리 홈페이지(20기)
+# APPTIVE 아카데미 프로젝트형 스터디
 
-## 미션 브랜치 전략
-
-![homepagegit](https://github.com/ApptiveDev/apptive-20th-academy-project/assets/64734115/afffd8b1-35bc-4f45-9b68-861c70ba381e)
-
-```plain
+## 브랜치 구조
+![homepagegit](https://github.com/ApptiveDev/apptive-20th-academy-project/assets/64734115/afffd8b1-35bc-4f45-9b68-861c70ba381e)  
+미션 진행을 위한 브랜치 구조는 아래와 같이 Git Flow를 따릅니다. 단, 간소화하여 `main`, `develop`, `feature(개인브랜치)` 정도로만 구분합니다.
+```python
 main
-  - <미션명>                         #  최종 미션 완료 브랜치
-    - <미션명>/frontend              #  미션, 직군에 해당하는 브랜치
-      - <미션명>/frontend/<이름>     #  미션 참여자들의 개인 브랜치
+  - <미션명>/main                    #  잘 동작하는 프론트, 백엔드 코드 합본
+    - <미션명>/frontend/develop      #  프론트엔드팀 미션 진행 공간
+      - <미션명>/frontend/<이름>      #  프론트엔드팀 개인별 미션 진행 공간
       - ...
-    - <미션명>/backend
-      - <미션명>/backend/<이름>      
+    - <미션명>/backend/develop       #  백엔드팀 미션 진행 공간
+      - <미션명>/backend/<이름>       #  백엔드팀 개인별 미션 진행 공간
       - ...
 ```
 ## 스터디 진행
