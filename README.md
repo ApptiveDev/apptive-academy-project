@@ -27,10 +27,13 @@ main
 2. 다음 미션 브랜치 생성
    - 다음 미션을 위해 새로운 브랜치를 main브랜치에서 생성한다.
 
-## 도커 이미지 빌드 후 실행하는 방법
-1. 도커를 실행한다.
-2. backend 폴더의 apptive/build/libs에 있는 .jar 파일과 Dockerfile을 다운로드한다.
-3. .jar 파일과 Dockerfile을 새로운 같은 폴더로 옮긴다.
-4. cmd창을 열고 해당 디렉터리로 이동한다.
-5. 다음 명령을 터미널에 입력한다. ```docker build -t app .``` 마지막 .을 빼먹지 않는다.
-6. ```docker run -p 8080:8080 app``` 도커 이미지를 실행한다.
+## 프론트엔드에서 백엔드 API 이용 방법
+1. 도커를 설치한다.
+2. 터미널에서 ```docker -v``` 명령을 통해 버전이 출력되면 설치 완료
+3. ```docker pull mysql``` 명령을 통해 mysql 이미지 다운로드
+4. 터미널에서 깃허브의 미션에 해당하는 폴더에서 docker 폴더의 경로로 이동한다. (폴더안에 .jar, Dockerfile, init폴더, docker-compose파일 존재해야 함)
+5. 터미널에 ```docker build -t mission-backend . ``` 명령을 통해 백엔드 이미지를 빌드한다.
+6. 터미널에 ```docker compose up``` 명령을 통해 컨테이너를 실행 시킨다.
+7. Started ApptiveApplication in 8.111 seconds (process running for 8.981)과 같은 출력이 뜨면 localhost:8080 포트를 통해 API를 이용 가능하다.
+8. 모든 작업을 마친 후 터미널에 ctrl + c를 통해 실행 중인 서버를 종료시킨다.
+9. ```docker compose down``` 명령을 통해 생성된 컨테이너를 삭제한다.
