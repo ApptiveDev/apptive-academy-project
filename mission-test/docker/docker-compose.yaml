@@ -14,9 +14,22 @@ services:
     volumes:
       - "./init/:/docker-entrypoint-initdb.d/"
 
-  spring:
+  build-mission-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mission-backend:latest
+    networks:
+      - apptive
     depends_on:
       - my-db
+
+  spring:
+    depends_on:
+      - build-mission-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: mission-backend:latest
     container_name: spring
     ports:
