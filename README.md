@@ -13,6 +13,22 @@ main
       - <미션명>/backend/<이름>       #  백엔드팀 개인별 미션 진행 공간
       - ...
 ```
+## 폴더 구조
+
+폴더 구조
+```
+main 브랜치 
+	-README.md 
+
+mission1 브랜치
+	-frontend ## frontend 미션 폴더
+	-backend ## backend 미션 폴더
+	-docker ## 도커, 컴포즈, .jar 파일 보관
+	-README.md ## 미션 설명 README
+
+-mission2
+	-...
+```
 ## 스터디 진행
 ### 스터디원
 1. 브랜치 생성 및 작업 시작
