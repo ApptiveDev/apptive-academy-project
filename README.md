@@ -30,7 +30,7 @@ main
 ## 프론트엔드에서 백엔드 API 이용 방법
 1. docker-compose 활성화 확인 : 터미널에서 ```docker-compose -v``` 명령을 통해 version이 출력되는지 확인한다.
 2. docker-compose 활성화가 되어있지 않으면 os에 맞추어 docker-compose를 설치한다.
-3. 터미널에 ```docker compose up``` 명령을 통해 컨테이너를 실행 시킨다.
+3. 터미널에 ```docker compose up --build``` 명령을 통해 컨테이너를 실행 시킨다.
 4. Started ApptiveApplication in 8.111 seconds (process running for 8.981)과 같은 출력이 뜨면 localhost:8080 포트를 통해 API를 이용 가능하다.
 5. 모든 작업을 마친 후 터미널에 ctrl + c를 통해 실행 중인 서버를 종료시킨다.
 6. ```docker compose down``` 명령을 통해 생성된 컨테이너를 삭제한다.
