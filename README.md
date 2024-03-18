@@ -21,10 +21,11 @@ main 브랜치
 	-README.md 
 
 mission1 브랜치
-	-frontend ## frontend 미션 폴더
-	-backend ## backend 미션 폴더
-	-docker ## 도커, 컴포즈, .jar 파일 보관
-	-README.md ## 미션 설명 README
+	-mission1 ## 미션 폴더
+		-frontend ## frontend 미션 폴더
+		-backend ## backend 미션 폴더
+		-docker ## 도커, 컴포즈, .jar 파일 보관
+		-README.md ## 미션 설명 README
 
 -mission2
 	-...
