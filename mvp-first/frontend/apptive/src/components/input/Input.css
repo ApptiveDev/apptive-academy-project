@@ -1,0 +1,19 @@
+.input {
+  border: 2px solid #ecedee;
+  border-radius: 8px;
+  width: 344px;
+  height: 20px;
+  padding: 16px;
+  outline: none;
+  font-family: NanumSquareRound;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.input::placeholder {
+  color: #b2b6bb;
+}
+
+.input:focus {
+  border: 2px solid #59acff;
+}
