@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./css/App.css";
 import Input from "./components/input/Input";
+import Button from "./components/button/Button";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <Input placeholder={"이름"} />
               <Input placeholder={"전화번호"} />
             </div>
+            <Button>조회하기</Button>
           </div>
         </div>
       </div>

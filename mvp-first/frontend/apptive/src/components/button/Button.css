@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: NanumSquareRound;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 16px;
+  justify-content: center;
+  text-align: center;
+
+  width: 380px;
+  height: 55px;
+  font-size: 18px;
+
+  background: #ff7900;
+}
+
+.button:hover {
+  background: #e0832c;
+}
+
+.button:active {
+  background: #e0832c;
+}
