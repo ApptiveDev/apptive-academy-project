@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  my-db:
+    image: mysql:latest
+    container_name: my-db
+    ports:
+      - "33306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234    
+    networks:
+      - apptive
+    volumes:
+      - "./init/:/docker-entrypoint-initdb.d/"
+
+  spring:
+    depends_on:
+      - my-db
+    build: .
+    image: mission-backend:latest
+    container_name: spring
+    ports:
+      - "8080:8080"
+    networks:
+      - apptive
+    command: sh -c "
+            /bin/sleep 20 && 
+            java -jar /app.jar"
+
+networks:
+  apptive: {}
