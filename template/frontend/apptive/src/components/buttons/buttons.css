@@ -1,0 +1,31 @@
+.button {
+  width: 340px;
+  height: 55px;
+  border: 2px solid;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.default {
+  color: white;
+  background-color: #ff7900;
+  border-color: #ff7900;
+}
+
+.loading {
+  color: #ff7900;
+  background-color: white;
+  border-color: #ff7900;
+}
+
+.error {
+  color: #71787f;
+  background-color: white;
+  border-color: #ecedee;
+}
