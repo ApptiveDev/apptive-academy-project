@@ -1,36 +1,27 @@
-import { useState } from 'react';
-import reactLogo from '@assets/react.svg';
-import viteLogo from '../public/vite.svg';
-import '@css/App.css';
+import "@css/App.css";
+import Buttons from "./components/buttons/buttons";
+import Input from "./components/input/input";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="App">
+        <div className="title">협력사 이름</div>
+        <div className="form">
+          <div className="form_text">
+            <div className="form_title">고객 정보 조회</div>
+            <div className="form_detail">
+              이름과 전화번호를 통해 AS 정보를 불러올 수 있어요
+            </div>
+          </div>
+          <div className="input_box">
+            <Input placeholder="이름" />
+            <Input placeholder="전화번호" />
+          </div>
+          <Buttons />
+        </div>
+        <div className="background_text">APPTIVE</div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button type="button" onClick={() => setCount((c) => c + 1)}>
-          count is
-          {count}
-        </button>
-        <p>
-          Edit
-          <code>src/App.jsx</code>
-          and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
