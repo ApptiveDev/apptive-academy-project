@@ -1,4 +1,12 @@
 :root {
+  --brand-primary: #FF7900;
+  --primary-main: #FF9433;
+  --brand-text: #FFFFFF;
+  --text-2: #71787F;
+  --text-3: #B2B6BB;
+  --background-main: #FFFFFF;
+  --border-1: #ECEDEE;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

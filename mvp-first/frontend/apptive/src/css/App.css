@@ -1,42 +1,121 @@
+@import url('https://webfontworld.github.io/NanumSquareRound/NanumSquareRound.css');
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+  height: 880px;
+  gap: 0px;
+  border-radius: 24px;
+  opacity: 0px;
+  background: linear-gradient(244.73deg, rgba(255, 175, 102, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%);
+}
+
+.backgroundText {
+  opacity: 30%;
+  filter: blur(20px);
+  position: absolute;
+  left: 120px;
+  bottom: 0px;
+  font-family: NanumSquareRound;
+  font-size: 400px;
+  font-weight: 800;
+  line-height: 200px;
+  color: var(--primary-main);
+}
+
+.partnerName {
+  position: absolute;
+  top: 36px;
+  left: 66px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: NanumSquareRound;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27.24px;
+  text-align: left;
+  color: var(--primary-main);
+}
+
+.searchInfo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 340px;
+  height: 316px;
+  top: 248px;
+  left: 470px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.searchInfo_title {
+  width: 144px;
+  height: 27px;
+  top: 320px;
+  left: 550px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: NanumSquareRound;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 27.24px;
   text-align: center;
+  color: var(--primary-main);
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.searchInfo_descript {
+  margin-top: 8px;
+  font-family: NanumSquareRound;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.16px;
+  text-align: left;
+  color: var(--text-2);
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchInfo_input {
+  width: Hug (340px)px;
+  height: Hug (50px)px;
+  padding: 16px;
+  gap: 8px;
+  border-radius: 8px;
+  border: 2px;
+  opacity: 0px;
+  background: var(--background-main);
+  border: 2px solid var(--border-1);
+  font-family: NanumSquareRound;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.16px;
+  text-align: left;
+  color: var(--text-3);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input::placeholder {
+  color: var(--text-3);
 }
 
-.card {
-  padding: 2em;
+#input--name {
+  margin-top: 60px;
 }
 
-.read-the-docs {
-  color: #888;
+#input--phoneNum {
+  margin-top: 8px;
+}
+
+#input--btn {
+  margin-top: 40px;
+  background: var(--brand-primary);
+  font-family: NanumSquareRound;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22.7px;
+  text-align: center;
+  color: var(--brand-text);
 }

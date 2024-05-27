@@ -1,36 +1,17 @@
-import { useState } from 'react';
-import reactLogo from '@assets/react.svg';
-import viteLogo from '../public/vite.svg';
 import '@css/App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button type="button" onClick={() => setCount((c) => c + 1)}>
-          count is
-          {count}
-        </button>
-        <p>
-          Edit
-          <code>src/App.jsx</code>
-          and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="backgroundText">APPTIVE</div>
+      <div className="partnerName">협력사 이름</div>
+      <form className="searchInfo">
+        <div className="searchInfo_title">고객 정보 조회</div>
+        <div className="searchInfo_descript">이름과 전화번호를 통해 AS 정보를 불러올 수 있어요</div>
+        <input type='text' placeholder='이름' className='searchInfo_input' id='input--name'></input>
+        <input type='text' placeholder='전화번호' maxLength={14} className='searchInfo_input' id='input--phoneNum'></input>
+        <input type='button' value={'조회하기'} className='searchInfo_input' id='input--btn'></input>
+      </form>
     </>
   );
 }
