@@ -1,42 +1,119 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.layout{
+  width: 1280px;
+  height: 880px;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 24px;
+  position:relative;
+}
+
+.background-img{
+  width: 100%;
+  height: auto;
+}
+
+.h-name{
+  color:#FF9433;
+  font-size:24px;
+  font-weight: 700;
+  
+  font-family: NanumSquareRound;
+  position:absolute;
+  top: 36px;
+  left:66px;
+}
+
+.login-container{
+  width: 340px;
+  height: 316px;
+  position:absolute;
+  top : 248px;
+  left: 470px;
+  display:flex;
+  flex-direction: column;
+}
+
+.login-header{
+  color: #FF9433;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 27.24px;
+  font-family: NanumSquareRound;
+
+}
+
+.login-header-ex{
+  color:#71787F;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.16px;
+  font-family: NanumSquareRound;
+  margin-top:8px;
+}
+
+#user-name{
+  width:340px;
+  height:50px;
+  border-radius: 8px;
+  border: solid 2px #ECEDEE;
+  margin-top: 50px;
+
+}
+
+#user-number{
+  width:340px;
+  height:50px;
+  border-radius: 8px;
+  border: solid 2px #ECEDEE;
+  top: 171px;
+  margin-top:8px;
+}
+
+.login-button{
+  width:340px;
+  height:55px;
+  border-radius: 8px;
+  background-color:#FF7900;
+  border :solid 2px #FF7900;
+  margin-top: 35px;
+
+  color:white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22.7px;
+  text-align: center;
+
+  cursor:pointer;
+}
+
+.login-button-loading{
+  width:340px;
+  height:55px;
+  border-radius: 8px;
+  background-color:white;
+  border :solid 2px #FF7900;
+  margin-top: 35px;
+
+  color: #FF7900;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22.7px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.login-button-disabled{
+  width:340px;
+  height:55px;
+  border-radius: 8px;
+  background-color:white;
+  border :solid 2px #71787F;
+  margin-top: 35px;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  color: #71787F;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22.7px;
+  text-align: center;
 }
