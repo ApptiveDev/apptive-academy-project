@@ -1,42 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App {
+  width: calc(100vw - 160px);
+  height: calc(100vh - 144px);
+  margin: 72px 80px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: #ffaf6614;
+  border-radius: 24px;
+  padding: 36px 66px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.title {
+  color: #ff9433;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form_text {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-.card {
-  padding: 2em;
+.form_title {
+  color: #ff9433;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 8px;
 }
 
-.read-the-docs {
-  color: #888;
+.form_detail {
+  color: #71787f;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.input_box {
+  width: 340px;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.background_text {
+  margin-top: 300px;
+  margin-left: 200px;
+  color: #ffdcbc;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 800;
+  text-shadow: 0px 0px 35px #ffdcbc;
+  color: transparent;
+  overflow: auto;
+  text-overflow: clip;
+  z-index: -1;
 }
