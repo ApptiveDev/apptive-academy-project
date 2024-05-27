@@ -1,42 +1,52 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.container {
+  height: 900px;
+  background: linear-gradient(
+    244.73deg,
+    rgba(255, 175, 102, 0.08) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.title {
+  font-family: NanumSquareRound;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 36px 66px;
+  color: #ff9433;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form__container {
+  width: 380px;
+  margin-top: 100px;
 }
 
-.card {
-  padding: 2em;
+.form__title {
+  font-family: NanumSquareRound;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: left;
+  color: #ff9433;
 }
 
-.read-the-docs {
-  color: #888;
+.form__details {
+  font-family: NanumSquareRound;
+  font-size: 16px;
+  font-weight: 700;
+
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 60px;
+  color: #71787f;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 40px;
 }
