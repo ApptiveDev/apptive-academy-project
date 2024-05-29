@@ -23,8 +23,8 @@ public class User {
     private String phoneNumber;
 
     // new ArrayList 해주기 ** 프록시 문제 관련
-    // @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    // private List<As> asList = new ArrayList<>();
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<As> as_list = new ArrayList<>();
 
     @Builder
     public User(String name, String phoneNumber) {
