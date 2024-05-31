@@ -5,7 +5,9 @@ module.exports = {
     'airbnb',
     'airbnb/hooks'
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.js'],
+
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh', 'import'],
@@ -15,6 +17,8 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    "react/react-in-jsx-scope": "off",
+
+    'react/react-in-jsx-scope': 'off',
+
   },
 }
