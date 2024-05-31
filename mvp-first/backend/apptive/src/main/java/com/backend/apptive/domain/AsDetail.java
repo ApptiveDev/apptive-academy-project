@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor
-public class As {
+public class AsDetail {
     @Id
     @GeneratedValue
     private Long id;
@@ -26,7 +26,7 @@ public class As {
     private User user;
 
     @Builder
-    public As(User user, String status, String date) {
+    public AsDetail(User user, String status, String date) {
         this.user = user;
         this.status = status;
         this.date = date;
@@ -35,6 +35,6 @@ public class As {
     // 연관관계 매핑 편의 메소드 **
     public void makeRelation(User user){
         this.user = user;
-        user.getAs_list().add(this);
+        user.getAsDetailList().add(this);
     }
 }

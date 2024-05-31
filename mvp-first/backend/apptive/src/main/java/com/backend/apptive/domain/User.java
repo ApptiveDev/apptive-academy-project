@@ -24,7 +24,7 @@ public class User {
 
     // new ArrayList 해주기 ** 프록시 문제 관련
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<As> as_list = new ArrayList<>();
+    private List<AsDetail> asDetailList = new ArrayList<>();
 
     @Builder
     public User(String name, String phoneNumber) {
