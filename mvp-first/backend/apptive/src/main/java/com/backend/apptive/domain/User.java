@@ -13,7 +13,7 @@ public class User {
 
     private String name;
     private String phoneNumber;
-    private String serviceDetails;
+    private String ASDetails;
 
     // getters and setters
     public Long getId() {
@@ -40,11 +40,11 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getServiceDetails() {
-        return serviceDetails;
+    public String getASDetails() {
+        return ASDetails;
     }
 
-    public void setServiceDetails(String serviceDetails) {
-        this.serviceDetails = serviceDetails;
+    public void setASDetails(String ASDetails) {
+        this.ASDetails = ASDetails;
     }
 }
